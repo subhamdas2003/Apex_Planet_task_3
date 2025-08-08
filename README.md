@@ -29,18 +29,13 @@ Dynamic-Weather-Fun/
 ├── index.html # Main HTML file
 ├── styles.css # Styling (Glassmorphism + Responsive)
 ├── script.js # App logic & API calls
-└── assets/ # (Optional) Static assets like icons or logos
-
-## 📸 Screenshots
-![App Screenshot](screenshot.png)  
-*Beautiful glassmorphism cards with dynamic background.*
+└── assets/ # (Optional) Static assets like icons or logo
 
 ---
 
 ## ⚙️ How to Use
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/dynamic-weather-fun.git
+
    
 Open index.html in your browser (no build needed).
 Click "Change Background" to load a new image.
