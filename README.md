@@ -11,7 +11,7 @@
 - **Mobile-Friendly** — Works seamlessly across devices of all screen sizes.  
 
 ---
-
+<pre>
 ## 🛠️ Tech Stack
 - **HTML5** — Structured content.  
 - **CSS3** — Modern responsive UI with Glassmorphism.  
@@ -20,7 +20,7 @@
   - [Open-Meteo](https://open-meteo.com/) — Weather Data  
   - [Unsplash](https://unsplash.com/developers) — Background Images  
   - [JokeAPI](https://jokeapi.dev/) — Jokes  
-
+<pre/>
 ---
 
 ## 📂 Project Structure
