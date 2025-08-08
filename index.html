@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dynamic Weather & Fun</title>
+  <meta name="description" content="Change background, check today's weather, and listen to a joke." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <header class="app-header glass">
+    <div class="brand">
+      <h1>Dynamic Weather & Fun</h1>
+      <p class="subtitle">Backgrounds • Weather • Jokes</p>
+    </div>
+    <div class="header-actions">
+      <button id="bgBtn" class="btn">Change Background</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Weather Card -->
+    <section class="card glass fade-in">
+      <h2>Weather — Today</h2>
+      <div class="weather-controls">
+        <div class="location-input">
+          <input id="cityInput" type="text" placeholder="Enter city (or leave blank to use location)" />
+          <button id="getWeatherBtn" class="btn small">Get Weather</button>
+        </div>
+        <button id="useGeoBtn" class="btn ghost small">Use My Location</button>
+      </div>
+
+      <div class="weather-output" id="weatherOutput">
+        <div class="weather-loading" id="weatherLoading">No data yet.</div>
+        <div class="weather-result hidden" id="weatherResult">
+          <div class="weather-main">
+            <div class="weather-icon" id="weatherIcon">☁️</div>
+            <div class="weather-info">
+              <div class="temp" id="temp">—°C</div>
+              <div class="desc" id="desc">—</div>
+            </div>
+          </div>
+          <div class="weather-meta">
+            <div>Wind: <span id="wind">—</span></div>
+            <div>Time: <span id="wtime">—</span></div>
+            <div>Location: <span id="wloc">—</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Joke Card -->
+    <section class="card glass fade-in delay-1">
+      <h2>Hear a Joke</h2>
+      <p class="muted">Click to hear a random joke — I’ll even read it aloud!</p>
+      <div class="joke-actions">
+        <button id="jokeBtn" class="btn small">Tell me a joke</button>
+        <button id="stopJokeBtn" class="btn ghost small">Stop</button>
+      </div>
+      <div id="jokeText" class="joke-text muted">No joke yet.</div>
+    </section>
+
+    <!-- Instructions -->
+    <section class="card glass fade-in delay-2 small-card">
+      <h3>How to demo</h3>
+      <ol>
+        <li>Click <strong>Change Background</strong> to load a new high-quality image.</li>
+        <li>Type a city and click <strong>Get Weather</strong> or click <strong>Use My Location</strong>.</li>
+        <li>Click <strong>Tell me a joke</strong> to hear a joke with Text-to-Speech.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="app-footer glass">
+    <div>Made for ApexPlanet Internship — Task 3</div>
+    <div class="small muted">Images: Unsplash | Weather: Open-Meteo | Jokes: JokeAPI</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
